@@ -1,0 +1,86 @@
+@import url(variables.css);
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/********************************* MENU HEADER ************************************/
+
+.caja_header {
+    background: #00a2ff;
+    display: flex;
+    height: 55px;
+    padding-left: 200px;
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.caja_encabezado {
+    border: 2px solid red;
+    display: flex;
+    
+}
+.caja_menu{
+    border: 2px solid rgb(16, 174, 16);
+    display: flex;
+    align-items: center;
+}
+.caja_menu img{
+    border: 2px solid rgb(255, 0, 255);
+    max-width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caja_usuario {
+    border: 2px solid rgb(77, 105, 128);
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.caja_usuario img{
+    border: 2px solid rgb(17, 255, 0);
+    max-width: 45px;
+    
+}
+.caja_usuario span{
+    border: 2px solid rgb(107, 77, 128);
+    width: 50%;
+    height: 50%;
+}
+.caja_salir {
+    border: 2px solid rgb(16, 174, 16);
+    display: flex;
+    align-items: center;
+}
+.caja_salir img{
+    border: 2px solid rgb(38, 0, 255);
+    max-width: 35px;
+
+}
+
+
+/************************************ ASIDE MENU ***************************************/
+
+
+.caja_aside {
+}
+.caja_user {
+}
+.infor_user {
+}
+.Menus {
+}
+.caja_pendiente {
+}
+.caja_progreso {
+}
+.caja_finalizado {
+}
+
