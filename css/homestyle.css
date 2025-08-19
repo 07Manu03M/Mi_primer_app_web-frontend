@@ -14,7 +14,7 @@
     background: #00a2ff;
     display: flex;
     height: 55px;
-    padding-left: 200px;
+    padding-left: 310px;
     padding-right: 10px;
     justify-content: space-between;
     align-items: center;
@@ -70,17 +70,104 @@
 
 
 .caja_aside {
+    background: #c2c2c2;
+    width: 20%;
+    height: 92vh;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 .caja_user {
+    border: 2px solid rgb(204, 255, 0);
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.caja_user img{
+    border: 2px solid rgb(255, 251, 0);
+    max-width: 100px;
 }
 .infor_user {
+    border: 2px solid rgb(9, 255, 0);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.infor_user h5{
+    border: 2px solid rgb(0, 255, 242);
+}
+.infor_user p{
+    border: 2px solid rgb(0, 119, 255);
+}
+.status{
+    border: 2px solid rgb(4, 0, 255);
+    display: flex;
+}
+.status img{
+    border: 2px solid rgb(255, 0, 255);
+    max-width: 30px;
+    padding-right: 10px;
+}
+.status span{
+    border: 2px solid rgb(255, 0, 132);
 }
 .Menus {
+    border: 2px solid rgb(68, 255, 0);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+.Menus span{
+    border: 2px solid rgb(255, 0, 255);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+/* MENU 1 */
 .caja_pendiente {
+    border: 2px solid rgb(25, 0, 255);
+    display: flex;
+    align-items: center;
+    padding: 5px;
 }
+.caja_pendiente img{
+    border: 2px solid rgb(77, 255, 0);
+    max-width: 35px;
+    margin-right: 20px;
+}
+.caja_pendiente span{
+    border: 2px solid rgb(238, 0, 255);
+}
+/* MENU 2 */
 .caja_progreso {
+    border: 2px solid rgb(25, 0, 255);
+    display: flex;
+    align-items: center;
+    padding: 5px;
 }
+.caja_progreso img{
+    border: 2px solid rgb(77, 255, 0);
+    max-width: 35px;
+    margin-right: 20px;
+}
+.caja_progreso span{
+    border: 2px solid rgb(238, 0, 255);
+}
+/* MENU 3 */
 .caja_finalizado {
+    border: 2px solid rgb(25, 0, 255);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.caja_finalizado img{
+    border: 2px solid rgb(77, 255, 0);
+    max-width: 35px;
+    margin-right: 20px;
+}
+.caja_finalizado span{
+    border: 2px solid rgb(238, 0, 255);
 }
 
