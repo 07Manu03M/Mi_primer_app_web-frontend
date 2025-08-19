@@ -3,3 +3,111 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+body {
+    /* El fondo se mantiene igual */
+    background-image: url('https://i.pinimg.com/1200x/18/93/bd/1893bd7ca4cf1493fbf3f25cccc54fe3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Nueva alineación para el panel */
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+    align-items: flex-start;     /* Alinea los elementos en la parte superior */
+    
+    /* Agrega un poco de margen para separarlo del borde */
+    padding: 20px;
+    
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* El resto del código CSS para el panel, los botones, etc. se mantiene igual */
+.login-panel {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+/* ... resto de tu código CSS ... */
+
+}
+
+/* Panel Principal (el cuadro blanco) */
+.login-panel {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+
+/* Logos */
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo del colegio */
+    margin-bottom: 20px;
+}
+
+.integra-logo {
+    width: 150px;
+    margin-top: 20px;
+}
+
+.app-logos img {
+    width: 100px;
+    margin: 10px 5px;
+}
+
+/* Cuadrícula de Botones de Rol */
+.role-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.role-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.role-button img {
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+/* Colores de los botones */
+.admin { background-color: #3498db; }
+.profe { background-color: #27ae60; }
+.estud { background-color: #f39c12; }
+.padres { background-color: #e74c3c; }
+
+/* Texto de protección de datos */
+.data-protection-text {
+    font-size: 10px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Media Query para pantallas más grandes (Tabletas y Escritorio) */
+@media (min-width: 768px) {
+    .login-panel {
+        width: 350px;
+    }
+}
