@@ -3,3 +3,10 @@
 :root {
     --primary-color: #ffffff;
 }
+
+@font-face{
+
+    font-family:"comfortaa" ;
+     src: url(../storage/font/Comfortaa-VariableFont_wght.ttf);
+     
+}

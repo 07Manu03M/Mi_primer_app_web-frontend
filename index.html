@@ -7,36 +7,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <div id="role-selector" class="login-panel">
-        
-        <img src="storage/img/alien cat.jpg" alt="Logo del Colegio" class="logo">
-        
-        <div class="role-grid">
-           
-            <button class="role-button profe">
-                <img src="storage/img/alien cat.jpg" alt="Profe Icon">
-                <span>usuarii2</span>
-            </button>
-            <button id="student-btn" class="role-button estud">
-                <img src="storage/img/alien cat.jpg" alt="Estud Icon">
-                <span>usuario3</span>
-            </button>
-            <button class="role-button padres">
-                <img src="storage/img/alien cat.jpg" alt="Padres Icon">
-                <span>usuario4</span>
-            </button>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="storage/img/logo pricipal.jpeg" alt="Logo del Colegio" class="logo">
+                <h2>ESTUDIANTE</h2>
+                <form>
+                    <div class="input-group">
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+                    </div>
+                    <div class="input-group">
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                    </div>
+                    <div class="botones-contenedor">
+                        <button type="submit" class="btn">LOGIN</button>
+                        <button type="submit" class="btn">create account</button>
+                    </div>
+                </form>
+                <a href="#" class="recuperar-contrasena">Recuperar contraseña</a>
+            </div>
         </div>
-        
-        <img src="storage/img/alien cat.jpg" alt="Logo Integra" class="integra-logo">
-        
-        <div class="app-logos">
-            <img src="storage/img/alien cat.jpg" alt="App Store">
-            <img src="storage/img/alien cat.jpg" alt="Google Play">
-        </div>
-
-        <p class="data-protection-text">proeyctos organizados</p>
-    </div>
-
 </body>
 </html>

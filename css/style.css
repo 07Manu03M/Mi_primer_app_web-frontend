@@ -1,115 +1,98 @@
-*{
-    margin: 0;
+@import url('variables.css');
+
+* {
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
 }
 
 
 body {
-    /* El fondo se mantiene igual */
-    background-image: url('https://i.pinimg.com/1200x/18/93/bd/1893bd7ca4cf1493fbf3f25cccc54fe3.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    /* Nueva alineación para el panel */
+    background-image: url('../storage/img/Edna\ Mode.jpeg');
+    font-family:'comfortaa';
     display: flex;
-    justify-content: flex-start; /* Alinea los elementos a la izquierda */
-    align-items: flex-start;     /* Alinea los elementos en la parte superior */
-    
-    /* Agrega un poco de margen para separarlo del borde */
-    padding: 20px;
-    
-    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    font-family: sans-serif;
 }
 
-/* El resto del código CSS para el panel, los botones, etc. se mantiene igual */
-.login-panel {
-    background-color: white;
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: #fff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Ancho máximo para el formulario en escritorio */
     text-align: center;
-    width: 300px;
-}
-/* ... resto de tu código CSS ... */
-
-
-
-/* Panel Principal (el cuadro blanco) */
-.login-panel {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
-    width: 300px;
 }
 
-/* Logos */
 .logo {
-    width: 100px; /* Ajusta el tamaño del logo del colegio */
+    width: 120px;
     margin-bottom: 20px;
 }
 
-.integra-logo {
-    width: 150px;
-    margin-top: 20px;
+h2 {
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.app-logos img {
-    width: 100px;
-    margin: 10px 5px;
+.input-group {
+    margin-bottom: 15px;
 }
 
-/* Cuadrícula de Botones de Rol */
-.role-grid {
-    display: flex;
-    justify-content: center; /* Centra los botones en el contenedor */
-    align-items: center;
-    gap: 15px; /* Espacio entre los botones */
-    margin: 20px 0;
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
-.role-button {
-    /* IMPORTANTE: Vuelve a usar Flexbox en los botones */
-    display: flex;
-    flex-direction: column; /* Apila el ícono y el texto verticalmente */
-    align-items: center; /* Centra el ícono y el texto horizontalmente */
-    
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffc107; /* Color amarillo */
     border: none;
-    border-radius: 8px;
-    padding: 15px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #288fd3; /* Tono más oscuro al pasar el ratón */
+}
+
+.botones-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recuperar-contrasena {
+    display: block;
+    margin-top: 15px;
     font-size: 14px;
-    font-weight: bold;
-    color: white;
+    color: #007bff;
+    text-decoration: none;
 }
 
-.role-button img {
-    width: 40px;
-    margin-bottom: 5px; /* Añade un pequeño espacio entre la imagen y el texto */
-    border-radius: 5px; /* Para que las imágenes se vean como en el diseño original */
-}}
-
-/* Colores de los botones */
-.admin { background-color: #3498db; }
-.profe { background-color: #27ae60; }
-.estud { background-color: #f39c12; }
-.padres { background-color: #e74c3c; }
-
-/* Texto de protección de datos */
-.data-protection-text {
-    font-size: 10px;
-    color: #555;
-    margin-top: 20px;
+.recuperar-contrasena:hover {
+    text-decoration: underline;
 }
 
-/* Media Query para pantallas más grandes (Tabletas y Escritorio) */
-@media (min-width: 768px) {
-    .login-panel {
-        width: 350px;
+/* Media Queries para hacerlo más responsive */
+@media (max-width: 500px) {
+    .login-box {
+        margin: 20px;
+        padding: 20px;
     }
 }
