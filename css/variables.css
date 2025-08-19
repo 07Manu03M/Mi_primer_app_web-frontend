@@ -1,4 +1,4 @@
-@import url(variables.css);
+@import url(../css/variables.css);
 
 :root {
     --primary-color: #ffffff;
@@ -6,7 +6,15 @@
 
 @font-face{
 
-    font-family:"comfortaa" ;
+    font-family:'comfortaa' ;
      src: url(../storage/font/Comfortaa-VariableFont_wght.ttf);
+     
+}
+
+
+@font-face{
+
+    font-family:'concertOne' ;
+     src: url(../storage/font/ConcertOne-Regular.ttf);
      
 }
