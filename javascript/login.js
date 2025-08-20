@@ -85,7 +85,7 @@ async function registrar() {
 
     alert("Registro exitoso ✅ Ahora puedes iniciar sesión");
     // volvemos al login
-    window.location.href = "../index.html";
+    window.location.href = "../paginas/login.html";
   } catch (err) {
     console.error(err);
     errorMsg.textContent = "Error de conexión con el servidor";
