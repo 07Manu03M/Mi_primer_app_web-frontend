@@ -30,7 +30,7 @@ Para ejecutar este proyecto, necesitas tener instalado:
 
 Sigue estos pasos para la instalación:
 
-```bash
+
 # Clona el repositorio
 git clone <URL_DEL_REPOSITORIO>
 
