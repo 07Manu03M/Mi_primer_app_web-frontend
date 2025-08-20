@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>app gestor de proyectos</title>
+  <link rel="stylesheet" href="./css/primerpagina.css">
 </head>
 <body>
-    
+  <!-- Video de fondo -->
+<video autoplay muted loop playsinline class="bg-video" id="bgVideo">
+  <source src="https://v1.pinimg.com/videos/mc/720p/d8/2c/e7/d82ce7fbb0b2c37d642162fed355dab5.mp4" type="video/mp4">
+  Tu navegador no soporta el video en HTML5.
+</video>
+
+<button id="soundBtn" class="sound-btn">🔇</button>
+
+  <!-- Caja de contenido encima del video -->
+  <section class="content">
+    <h4>app</h4>
+    <h2> Gestión de Tareas Colaborativas</h2>
+    <p>
+    Nuestra plataforma de Gestión de Tareas Colaborativas permite a los equipos pequeños organizar sus proyectos de manera eficiente, asignar responsables, y mantener a todos sincronizados. Todo lo que necesitas para trabajar en equipo sin perder tiempo ni información
+    </p>
+    <p>
+      Convierte el caos en productividad con solo un par de clics.
+    </p>
+
+    <a href="./paginas/login.html" class="btn">Siguiente</a>
+  </section>
+
+
+<script>
+  const video = document.getElementById('bgVideo');
+  const btn = document.getElementById('soundBtn');
+
+  btn.addEventListener('click', () => {
+    if(video.muted) {
+      video.muted = false;
+      btn.textContent = '🔊'; // icono sonido activado
+    } else {
+      video.muted = true;
+      btn.textContent = '🔇'; // icono sonido desactivado
+    }
+    video.play(); // asegura que el video siga reproduciéndose
+  });
+</script>
+
 </body>
 </html>

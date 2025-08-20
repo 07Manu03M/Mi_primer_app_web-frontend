@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>app tareas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="../storage/img/logo pricipal.jpeg" alt="Logo del Colegio" class="logo">
+            <h2>LOGIN</h2>
+
+            <!-- form -->
+            <form id="login-container">
+                <div class="input-group">
+                    <input type="email" id="login-email" name="user" placeholder="Correo" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="login-password" name="contrasena" placeholder="Contraseña" required>
+                </div>
+                <p class="error" id="login-error"></p>
+
+                <div class="botones-contenedor">
+                    <button type="submit" class="btn">LOGIN</button>
+                    <a href="paginas/crearcuenta.html">
+                        <button type="button" class="btn">CREATE ACCOUNT</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../javascript/login.js"></script>
+</body>
+</html>

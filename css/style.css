@@ -1,0 +1,92 @@
+@import url(../css/variables.css);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* responsive */
+@media (max-width: 500px) {
+    .login-box {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+body {
+    background-image: url('../storage/img/Edna\ Mode.jpeg');
+    font-family:'concertOne';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color:#f2f2f2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+    border: 5px solid #000000;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-family:'concertOne';
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color:#104770; 
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family:'concertOne';
+}
+
+.btn:hover {
+    background-color:#9eb1c0; 
+}
+
+.botones-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
