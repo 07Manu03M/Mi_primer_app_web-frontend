@@ -3,3 +3,11 @@
 :root {
     --primary-color: #ffffff;
 }
+
+
+@font-face{
+
+    font-family:'ConcertOne';
+     src: url(../storage/font/ConcertOne-Regular.ttf);
+     
+}
