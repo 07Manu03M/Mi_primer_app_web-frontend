@@ -42,7 +42,7 @@ npm install
 
 ## Variables de Entorno (.env) 🔑
 
-Crea un archivo .env en la raíz del proyecto con la siguiente estructura:
+# Crea un archivo .env en la raíz del proyecto con la siguiente estructura:
 
 PORT=5000
 MONGODB_URI=<TU_URL_DE_CONEXION_MONGODB>
@@ -55,7 +55,7 @@ MONGODB_URI: Cadena de conexión a tu base de datos MongoDB.
 
 CORS_ORIGIN: URL del frontend para permitir las peticiones. Si estás desarrollando localmente, usa http://localhost:3000.Variables de Entorno (.env) 🔑
 
-Crea un archivo .env en la raíz del proyecto con la siguiente estructura:
+# Crea un archivo .env en la raíz del proyecto con la siguiente estructura:
 
 PORT=5000
 MONGODB_URI=<TU_URL_DE_CONEXION_MONGODB>
@@ -72,7 +72,7 @@ CORS_ORIGIN: URL del frontend para permitir las peticiones. Si estás desarrolla
 
 Todos los endpoints tienen la base /api/tasks. Ejemplos de cómo consumirlos:
 
-Crear una nueva tarea (POST /api/tasks)
+# Crear una nueva tarea (POST /api/tasks)
 
 Descripción: Crea una nueva tarea en la base de datos.
 
