@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/homestyle.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+
+    <!-- Modal Crear Tarea -->
+    <div id="modalTarea" class="modal">
+        <div class="modal-content">
+            <h3>Crear Tarea</h3>
+            <input type="text" id="titulo" placeholder="Título" required>
+            <textarea id="descripcion" placeholder="Descripción" required></textarea>
+            <input type="date" id="fechaLimite" required>
+            <div class="modal-actions">
+                <button class="btn btn-primary" id="guardarTareaBtn">Guardar</button>
+                <button class="btn btn-danger" data-close="modalTarea">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Crear Grupo (NUEVO) -->
+    <div id="modalGrupo" class="modal">
+        <div class="modal-content">
+            <h3>Crear Grupo</h3>
+            <input type="text" id="nombreGrupo" placeholder="Nombre del grupo" required>
+            <textarea id="descripcionGrupo" placeholder="Descripción del grupo" required></textarea>
+            <div class="modal-actions">
+                <button class="btn btn-primary" id="guardarGrupoBtn">Guardar</button>
+                <button class="btn btn-danger" data-close="modalGrupo">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------- HEADER SECTION ------------------------------>
+
+    <header class="caja_header">
+        <div class="caja_menu">
+            <img src="" alt="">
+        </div>
+        <div class="caja_encabezado">
+            <div id="caja_usuario" class="caja_usuario">
+                <img src="../storage/img/unkwon.jpg" alt="">
+                <span></span>
+            </div>
+            <a href="../paginas/login.html" class="caja_salir">
+                <div class="caja_salir">
+                    <img src="../storage/img/out.png" alt="">
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <!----------------------------- ASIDE SECTION ---------------------------->
+
+    <aside class="caja_aside">
+        <div class="caja_user">
+            <img src="../storage/img/unkwon.jpg" alt="">
+            <div id="caja_aside" class="infor_user">
+                <h5></h5>
+                <p>Sin Grupo</p>
+                <div class="status">
+                    <img src="../storage/img/online.png" alt="">
+                    <span>En linea</span>
+                </div>
+            </div>
+        </div>
+        <div class="Menus">
+            <span>Menu Principal</span>
+            <a href="../paginas/homepage.html">
+                <div class="caja_pendiente">
+                    <img src="../storage/img/pendiente.png" alt="">
+                    <span>Pendiente</span>
+                </div>
+            </a>
+            <a href="../paginas/inprogress.html">
+                <div class="caja_progreso">
+                    <img src="../storage/img/inprogress.png" alt="">
+                    <span>En Progreso</span>
+                </div>
+            </a>
+            <a href="../paginas/finished.html">
+                <div class="caja_finalizado">
+                    <img src="../storage/img/finished.png" alt="">
+                    <span>Finalizado</span>
+                </div>
+            </a>
+        </div>
+    </aside>
+    <main class="caja_main">
+        <div class="temario_pendiente">
+            <div id="crearTareaBtn" class="pendiente1">
+                <img src="../storage/img/pendiente.png" alt="">
+                <span>Crear Tarea</span>
+            </div>
+            <div id="crearGrupoBtn" class="pendiente2">
+                <img src="../storage/img/pendiente.png" alt="">
+                <span>Crear Grupo</span>
+            </div>
+        </div>
+        <div class="list_actividades">
+            <div id="tareas-list" class="cajitasnoc">
+                <a class="actividad1" href="../paginas/gestortarea.html">
+                    <img src="../storage/img/pngtree-to-do-vector-element-png-image_7143502.png" alt="">
+                    <div class="text">
+                        <span></span>
+                        <p>Pendiente</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+<script type="module" src="../javascript/main.js"></script>
+
+</html>

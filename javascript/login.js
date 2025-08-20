@@ -48,7 +48,7 @@ async function login() {
     localStorage.setItem("token", data.token);
     alert("Login exitoso ✅");
     // redirige a la página principal después del login (ajusta si tu ruta es otra)
-    window.location.href = "paginas/inicioLogin.html";
+    window.location.href = "../paginas/homepage.html";
   } catch (err) {
     console.error(err);
     errorMsg.textContent = "Error de conexión con el servidor";
