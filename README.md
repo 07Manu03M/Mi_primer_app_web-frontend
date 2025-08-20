@@ -40,9 +40,9 @@ cd gestion-tareas-backend
 # Instala las dependencias
 npm install
 
-## Variables de Entorno (.env) 🔑
+# Variables de Entorno (.env) 🔑
 
-# Crea un archivo .env en la raíz del proyecto con la siguiente estructura:
+## Crea un archivo .env en la raíz del proyecto con la siguiente estructura:
 
 PORT=5000
 MONGODB_URI=<TU_URL_DE_CONEXION_MONGODB>
@@ -55,7 +55,7 @@ MONGODB_URI: Cadena de conexión a tu base de datos MongoDB.
 
 CORS_ORIGIN: URL del frontend para permitir las peticiones. Si estás desarrollando localmente, usa http://localhost:3000.Variables de Entorno (.env) 🔑
 
-# Crea un archivo .env en la raíz del proyecto con la siguiente estructura:
+## Crea un archivo .env en la raíz del proyecto con la siguiente estructura:
 
 PORT=5000
 MONGODB_URI=<TU_URL_DE_CONEXION_MONGODB>
@@ -68,11 +68,11 @@ MONGODB_URI: Cadena de conexión a tu base de datos MongoDB.
 
 CORS_ORIGIN: URL del frontend para permitir las peticiones. Si estás desarrollando localmente, usa http://localhost:3000.
 
-## Endpoints de la API 🚀
+# Endpoints de la API 🚀
 
 Todos los endpoints tienen la base /api/tasks. Ejemplos de cómo consumirlos:
 
-# Crear una nueva tarea (POST /api/tasks)
+## Crear una nueva tarea (POST /api/tasks)
 
 Descripción: Crea una nueva tarea en la base de datos.
 
@@ -116,7 +116,7 @@ Cuerpo de la Petición:
 
 Descripción: Elimina una tarea por su ID.
 
-## Repositorio del Frontend 🖼️
+# Repositorio del Frontend 🖼️
 
 Este backend está diseñado para funcionar con el siguiente frontend:
 
