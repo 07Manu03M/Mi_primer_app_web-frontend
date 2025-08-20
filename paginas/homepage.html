@@ -10,6 +10,34 @@
 
 <body>
 
+
+    <!-- Modal Crear Tarea -->
+    <div id="modalTarea" class="modal">
+        <div class="modal-content">
+            <h3>Crear Tarea</h3>
+            <input type="text" id="titulo" placeholder="Título" required>
+            <textarea id="descripcion" placeholder="Descripción" required></textarea>
+            <input type="date" id="fechaLimite" required>
+            <div class="modal-actions">
+                <button class="btn btn-primary" id="guardarTareaBtn">Guardar</button>
+                <button class="btn btn-danger" data-close="modalTarea">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Crear Grupo (NUEVO) -->
+    <div id="modalGrupo" class="modal">
+        <div class="modal-content">
+            <h3>Crear Grupo</h3>
+            <input type="text" id="nombreGrupo" placeholder="Nombre del grupo" required>
+            <textarea id="descripcionGrupo" placeholder="Descripción del grupo" required></textarea>
+            <div class="modal-actions">
+                <button class="btn btn-primary" id="guardarGrupoBtn">Guardar</button>
+                <button class="btn btn-danger" data-close="modalGrupo">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
     <!----------------------------- HEADER SECTION ------------------------------>
 
     <header class="caja_header">
@@ -17,11 +45,11 @@
             <img src="" alt="">
         </div>
         <div class="caja_encabezado">
-            <div class="caja_usuario">
+            <div id="caja_usuario" class="caja_usuario">
                 <img src="../storage/img/unkwon.jpg" alt="">
-                <span>User10</span>
+                <span></span>
             </div>
-            <a href="../index.html" class="caja_salir">
+            <a href="../login.html" class="caja_salir">
                 <div class="caja_salir">
                     <img src="../storage/img/out.png" alt="">
                 </div>
@@ -34,8 +62,8 @@
     <aside class="caja_aside">
         <div class="caja_user">
             <img src="../storage/img/unkwon.jpg" alt="">
-            <div class="infor_user">
-                <h5>USER 10</h5>
+            <div id="caja_aside" class="infor_user">
+                <h5></h5>
                 <p>Sin Grupo</p>
                 <div class="status">
                     <img src="../storage/img/online.png" alt="">
@@ -67,25 +95,28 @@
     </aside>
     <main class="caja_main">
         <div class="temario_pendiente">
-            <div class="pendiente1">
+            <div id="crearTareaBtn" class="pendiente1">
                 <img src="../storage/img/pendiente.png" alt="">
-                <span>Pendiente</span>
+                <span>Crear Tarea</span>
             </div>
-            <div class="pendiente2">
+            <div id="crearGrupoBtn" class="pendiente2">
                 <img src="../storage/img/pendiente.png" alt="">
-                <span>Pendiente</span>
+                <span>Crear Grupo</span>
             </div>
         </div>
         <div class="list_actividades">
-            <div class="actividad1">
-                <img src="../storage/img/pngtree-to-do-vector-element-png-image_7143502.png" alt="">
-                <div class="text">
-                    <span>Actividad 1</span>
-                    <p>Pendiente</p>
-                </div>
+            <div id="tareas-list" class="cajitasnoc">
+                <a class="actividad1" href="../paginas/gestortarea.html">
+                    <img src="../storage/img/pngtree-to-do-vector-element-png-image_7143502.png" alt="">
+                    <div class="text">
+                        <span></span>
+                        <p>Pendiente</p>
+                    </div>
+                </a>
             </div>
         </div>
     </main>
 </body>
+<script type="module" src="../javascript/main.js"></script>
 
 </html>
