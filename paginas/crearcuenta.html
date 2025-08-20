@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>app tareas </title>
-    <link rel="stylesheet" href="../css/diseñocuenta.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Crear cuenta - app tareas</title>
+    <link rel="stylesheet" href="../css/diseñocuenta.css" />
 </head>
 <body>
     <div class="login-container">
         <div class="login-box">
             <img src="../storage/img/logo pricipal.jpeg" alt="Logo del Colegio" class="logo">
-                <h2>REGISTRO</h2>
-                <form>
-                    <div class="input-group">
-                    <input type="text" id="user" name="user" placeholder="User" required>
-                    </div>
-                    <div class="input-group">
-                    <input type="text" id="email" name="email" placeholder="email" required>
-                    </div>
-                    <div class="input-group">
-                    <input type="password" id="contrasena" name="contrasena" placeholder="password" required>
-                    </div>
-                    <div class="botones-contenedor">
-                        <button type="button" class="btn">CREATE ACCOUNT</button>
-                    </div>
-                </form>
-            </div>
+            <h2>REGISTRO</h2>
+
+            <form id="registro-container">
+                <div class="input-group">
+                    <input type="text" id="registro-nombre" name="user" placeholder="Nombre" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="registro-email" name="email" placeholder="Correo" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="registro-password" name="contrasena" placeholder="Contraseña" required>
+                </div>
+
+                <p class="error" id="registro-error"></p>
+
+                <div class="botones-contenedor">
+                    <button type="button" id="crearCuentaBtn" class="btn">CREATE ACCOUNT</button>
+                </div>
+            </form>
         </div>
+    </div>
+
+    <script src="../javascript/login.js"></script>
 </body>
 </html>
